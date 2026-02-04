@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="custom-header">
+      <div class="header-content">
+        <!-- Left: Logo with Text -->
+        <div class="logo">
+          <p style="color: #f4f4f4">college name</p>
+        </div>
+
+        <!-- Right: Contact Info and Search -->
+        <div class="contact-info">
+          <p style="color: #f4f4f4"><i class="fa fa-phone"></i> +1234567890</p>
+          <p style="color: #f4f4f4">
+            <i class="fa fa-envelope"></i> email@college.edu
+          </p>
+          <div class="search">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- Points to the same page (Home) -->
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer class="footer">
+      <center>
+        <div class="container text-center">
+          <p>&copy; Mahatma Gandhi Institute of Technology. All Rights Reserved.</p>
+          <p>
+            <i class="fa fa-phone"></i> +1234567890 |
+            <i class="fa fa-envelope"></i> email@college.edu |
+            <a
+              href="https://maps.app.goo.gl/cYQQQDvJZzQcepG38"
+              ><i class="fa fa-map-marker"></i> 98RC+CRG, MGIT Main Rd, Kokapet, Gandipet, Hyderabad, Telangana 500075, India</a
+            >
+          </p>
+        </div>
+      </center>
+    </footer>
+
+    <!-- Other sections remain the same -->
+  </body>
+</html>
+<style>
+  /* General reset for the page */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  /* Header Styling */
+  header {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .contact-info {
+    text-align: right;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+    color: #2c3e50;
+    margin: 5px 0;
+  }
+
+  .search {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  .search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+
+  .search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  /* Navigation bar styling */
+  /* Navigation bar styling */
+  nav {
+    margin-top: 10px;
+    height: 80px; /* Keep the navigation bar height larger */
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around; /* Even space around each item */
+    background-color: #0073e6;
+    border-radius: 30px;
+    height: 100%; /* Fill the navigation bar */
+    align-items: center; /* Vertically center the nav items */
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0; /* Remove margin from li to avoid double spacing */
+  }
+
+  /* Adjust links to fit smaller sizes */
+  nav ul li a {
+    text-decoration: none;
+    padding: 15px 15px; /* Smaller padding */
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Smaller font size */
+    border-radius: 15px;
+    /* background-color: #005bb5;
+    // transition: background-color 0.3s ease;
+    //line-height: 1.5; */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  nav ul li a:hover {
+    background-color: #004080; /* Darker color on hover */
+  }
+  nav ul li a.active {
+    background-color: #004080; /* Same color as hover */
+  }
+  .custom-header {
+    background-color: #004080; /* Dark blue background */
+    color: white; /* White text color */
+  }
+  .footer {
+    background-color: #004080; /* Dark blue background */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    position: relative; /* Allows positioning for content */
+    bottom: 0; /* Fixes the footer to the bottom */
+    width: 100%; /* Full width */
+  }
+
+  .footer p {
+    margin: 0; /* No margin for paragraph in footer */
+  }
+
+  .footer a {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline for links */
+  }
+
+  .footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+</style>
